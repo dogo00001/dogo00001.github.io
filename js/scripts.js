@@ -8,7 +8,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     // Mobile Navbar Toggle Fix (Event Delegation)
-    const navCollapse = document.querySelector(".navbar-collapse");
+    /*const navCollapse = document.querySelector(".navbar-collapse");
 
     document.body.addEventListener("click", (e) => {
         if (e.target.closest(".navbar-nav .nav-link")) {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 new bootstrap.Collapse(navCollapse, { toggle: true });
             }
         }
-    });
+    });*/
 
     // Smooth Scroll for Navigation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
