@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });*/
 
     // Smooth Scroll for Navigation
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    /*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             const href = this.getAttribute("href");
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         });
-    });
+    });*/
 
     // Newsletter Signup Alert with Email Validation
     /*document.getElementById("button-newsletter").addEventListener("click", function () {
