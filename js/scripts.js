@@ -59,6 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const paginatedItems = blogPreviews.slice(startIndex, endIndex);
 
         const container = document.getElementById("blog-preview-container");
+        if (!container) return; // Stop execution if container is missing
+        
         container.innerHTML = ""; // Clear existing content
 
         paginatedItems.forEach((item) => { // EDIT HTML content here!
@@ -114,44 +116,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
     displayBlogPreviews(currentPage);
 
-    // Mobile Navbar Toggle Fix (Event Delegation)
-    /*const navCollapse = document.querySelector(".navbar-collapse");
+    function sendEmail() {
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let phone = document.getElementById("phone").value.trim();
+        let message = document.getElementById("message").value.trim();
 
-    document.body.addEventListener("click", (e) => {
-        if (e.target.closest(".navbar-nav .nav-link")) {
-            if (navCollapse.classList.contains("show")) {
-                new bootstrap.Collapse(navCollapse, { toggle: true });
-            }
+        if (!name || !email || !phone || !message) {
+            alert("Bitte füllen Sie alle Felder aus.");
+            return;
         }
-    });*/
 
-    // Smooth Scroll for Navigation
-    /*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            const href = this.getAttribute("href");
-            if (href.startsWith("#") && href.length > 1) {
-                const target = document.querySelector(href);
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 50,
-                        behavior: "smooth"
-                    });
-                }
-            }
+        let recipient = "kontakt@example.com";
+        let subject = `Kontaktanfrage von ${name}`;
+        let body = `Hallo,%0D%0A%0D%0A`;
+        body += `Mein Name: ${name}%0D%0A`;
+        body += `Email: ${email}%0D%0A`;
+        body += `Telefon: ${phone}%0D%0A%0D%0A`;
+        body += `Nachricht:%0D%0A${message}%0D%0A%0D%0A`;
+        body += `Mit freundlichen Grüßen,%0D%0A${name}`;
+
+        window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+
+    let submitButton = document.getElementById("submitButton");
+    if (submitButton) {
+        submitButton.addEventListener("click", function() {
+            alert("Email generiert!"); // Debugging test
+            sendEmail()
         });
-    });*/
+    }
 
-    // Newsletter Signup Alert with Email Validation
-    /*document.getElementById("button-newsletter").addEventListener("click", function () {
-        const emailInput = document.getElementById("newsletter-email");
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (emailPattern.test(emailInput.value.trim())) {
-            alert("Thank you for signing up! We will keep you updated.");
-            emailInput.value = "";
-        } else {
-            alert("Please enter a valid email address.");
-        }
-    });*/
 });
+
+
