@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Bitte füllen Sie alle Felder aus.");
             return;
         }
-
+        /*  */
         let recipient = "kontakt@example.com";
         let subject = `Kontaktanfrage von ${name}`;
         let body = `Hallo,%0D%0A%0D%0A`;
