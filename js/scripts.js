@@ -7,6 +7,8 @@
 // Use this file to add JavaScript to your project
 
 document.addEventListener("DOMContentLoaded", function () {
+
+
     const blogPreviews = [
         {
             title: "Blog post title",
@@ -60,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const container = document.getElementById("blog-preview-container");
         if (!container) return; // Stop execution if container is missing
-        
+
         container.innerHTML = ""; // Clear existing content
 
         paginatedItems.forEach((item) => { // EDIT HTML content here!
@@ -141,11 +143,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let submitButton = document.getElementById("submitButton");
     if (submitButton) {
-        submitButton.addEventListener("click", function() {
+        submitButton.addEventListener("click", function () {
             alert("Email generiert!"); // Debugging test
             sendEmail()
         });
     }
+
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error loading footer:', error);
+        });
 
 });
 
