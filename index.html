@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="utf-8" />
@@ -30,21 +30,37 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#aboutMe">Über mich</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#news">Aktuelles</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#faqontact">Kontakt</a></li>
-                        <!--li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li-->
-                        <li class="nav-item"><a class="nav-link" href="index.html#faqontact">FAQ</a></li>
-                        <!--li class="nav-item"><a class="nav-link active" href="imprint.html">Impressum</a></li-->
-                        <!--li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
-                                <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        <!-- German Navigation -->
+                        <li class="nav-item content-de"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item content-de"><a class="nav-link" href="#aboutMe">Über mich</a></li>
+                        <li class="nav-item content-de"><a class="nav-link" href="index.html#news">Aktuelles</a></li>
+                        <li class="nav-item content-de"><a class="nav-link"
+                                href="index.html#contactFormSection">Kontakt</a></li>
+                        <li class="nav-item content-de"><a class="nav-link" href="index.html#faqontact">FAQ</a></li>
+
+                        <!-- English Navigation -->
+                        <li class="nav-item content-en" style="display: none;"><a class="nav-link"
+                                href="index.html">Home</a></li>
+                        <li class="nav-item content-en" style="display: none;"><a class="nav-link" href="#aboutMe">About
+                                me</a></li>
+                        <li class="nav-item content-en" style="display: none;"><a class="nav-link"
+                                href="index.html#news">News</a></li>
+                        <li class="nav-item content-en" style="display: none;"><a class="nav-link"
+                                href="index.html#contactFormSection">Contact</a></li>
+                        <li class="nav-item content-en" style="display: none;"><a class="nav-link"
+                                href="index.html#faqontact">FAQ</a></li>
+
+                        <!-- Language Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownLanguage" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <!-- Using Bootstrap Icons -->
+                                <i class="bi bi-globe"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLanguage">
+                                <li><a class="dropdown-item" href="#" onclick="changeLanguage('de')">DE</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">EN</a></li>
                             </ul>
-                        </li-->
+                        </li>
                         <!--li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
@@ -63,15 +79,25 @@
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-lg-8 col-xl-7 col-xxl-6">
                         <div class="my-5 text-center text-xl-start">
-                            <h1 class="display-5 fw-bolder mb-2">Willkommen bei Ihrer Hebamme Maxi Musterfrau
+                            <h1 class="display-5 fw-bolder mb-2 content-de">Willkommen bei Ihrer Hebamme Maxi Musterfrau
                             </h1>
-                            <p class="lead fw-normal text-white-50 mb-4">Kompetente Betreuung während der
-                                Schwangerschaft und
-                                im Wochenbett in Heppenheim (Bergstraße), Bensheim, Zwingenberg, Laudenbach, Hemsbach,
-                                Weinheim und Einhausen.</p>
+                            <h1 class="display-5 fw-bolder mb-2 content-en" style="display: none;">Welcome to your
+                                midwife Maxi Musterfrau
+                            </h1>
+                            <p class="lead fw-normal text-white-50 mb-4 content-de">Kompetente Betreuung während der
+                                Schwangerschaft und im Wochenbett in Heppenheim (Bergstraße), Bensheim,
+                                Zwingenberg, Laudenbach, Hemsbach, Weinheim und Einhausen.</p>
+                            <p class="lead fw-normal text-white-50 mb-4 content-en" style="display: none;">Competent
+                                care during pregnancy and in the postpartum period in Heppenheim (Bergstrasse),
+                                Bensheim, Zwingenberg, Laudenbach, Hemsbach, Weinheim, and Einhausen.</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Angebot</a>
-                                <a class="btn btn-outline-light btn-lg px-4" href="index.html#faqontact">Kontakt</a>
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3 content-de" href="#features">Angebot</a>
+                                <a class="btn btn-outline-light btn-lg px-4 content-de"
+                                    href="index.html#faqontact">Kontakt</a> <a
+                                    class="btn btn-primary btn-lg px-4 me-sm-3 content-en" style="display: none;"
+                                    href="#features">Services</a>
+                                <a class="btn btn-outline-light btn-lg px-4 content-en" style="display: none;"
+                                    href="index.html#contactFormSection">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -88,11 +114,17 @@
                     <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5 mb-lg-0" src="assets/portrait.jpg"
                             alt="..." /></div>
                     <div class="col-lg-6">
-                        <h2 class="fw-bolder">Über mich</h2>
-                        <p class="lead fw-normal text-muted mb-0">Ziel meiner Betreuung ist es, Sie in Ihrer eigenen
+                        <h2 class="fw-bolder content-de">Über mich</h2>
+                        <h2 class="fw-bolder content-en" style="display: none;">About me</h2>
+                        <p class="lead fw-normal text-muted mb-0 content-de">Ziel meiner Betreuung ist es, Sie in Ihrer
+                            eigenen
                             Kompetenz bei der Versorgung Ihres Kindes zu bestärken und zu fördern.
                             Meine Beratung richtet sich dabei nach Ihren individuellen Bedürfnissen und Ressourcen, um
-                            Sie bestmöglich bei der Umstellung ins Familienleben zu unterstützen.</p>
+                            Sie bestmöglich bei der Umstellung ins Familienleben zu unterstützen.</p>
+                        <p class="lead fw-normal text-muted mb-0 content-en" style="display: none;">The aim of my
+                            support is to encourage and support you in your own competence in caring for your child. My
+                            advice is based on your individual needs and resources in order to provide you with the best
+                            possible support as you transition to family life.</p>
                     </div>
                 </div>
             </div>
@@ -102,7 +134,8 @@
             <div class="container px-5">
                 <div class="row gx-5">
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h2 class="fw-bolder mb-0">Mein Leistungen im Überblick</h2>
+                        <h2 class="fw-bolder mb-0 content-de">Mein Leistungen im Überblick</h2>
+                        <h2 class="fw-bolder mb-0 content-en" style="display: none;">My services at a glance</h2>
                     </div>
                     <div class="col-lg-8">
                         <div class="row gx-5 row-cols-1 row-cols-md-2">
@@ -113,8 +146,11 @@
                                         <path fill-rule="evenodd"
                                             d="M2.965 12.695a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2m-.8 3.108.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125M8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
                                     </svg></div>
-                                <h2 class="h5">Schwangerschaft</h2>
-                                <p class="mb-0">Einfühlsame Schwangerschaftsbetreuung.</p>
+                                <h2 class="h5 content-de">Schwangerschaft</h2>
+                                <p class="mb-0 content-de">Einfühlsame Schwangerschaftsbetreuung.</p>
+                                <h2 class="h5 content-en" style="display: none;">Pregnancy</h2>
+                                <p class="mb-0 content-en" style="display: none;">Sensitive/Empathetic pregnancy
+                                    care/support.</p>
                             </div>
                             <div class="col mb-5 h-100">
                                 <div class="feature bg-primary bg-gradient rounded-3 mb-3"><svg
@@ -123,8 +159,11 @@
                                         <path fill-rule="evenodd"
                                             d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm-2 0h1v1H3a1 1 0 0 0-1 1V14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3.5a1 1 0 0 0-1-1h-1v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2m6.979 3.856a.5.5 0 0 0-.968.04L7.92 10.49l-.94-3.135a.5.5 0 0 0-.895-.133L4.232 10H3.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 .416-.223l1.41-2.115 1.195 3.982a.5.5 0 0 0 .968-.04L9.58 7.51l.94 3.135A.5.5 0 0 0 11 11h1.5a.5.5 0 0 0 0-1h-1.128z" />
                                     </svg></div>
-                                <h2 class="h5">Wochenbett</h2>
-                                <p class="mb-0">Professionelle Wochenbettbetreuung.</p>
+                                <h2 class="h5 content-de">Wochenbett</h2>
+                                <p class="mb-0 content-de">Professionelle Wochenbettbetreuung.</p>
+                                <h2 class="h5 content-en" style="display: none;">Postpartum</h2>
+                                <p class="mb-0 content-en" style="display: none;">Professional support in the postpartum
+                                    period.</p>
                             </div>
                             <div class="col mb-5 h-100">
                                 <div class="feature bg-primary bg-gradient rounded-3 mb-3"><svg
@@ -134,8 +173,12 @@
                                         <path
                                             d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z" />
                                     </svg></div>
-                                <h2 class="h5">Stillen und Ernährung</h2>
-                                <p class="mb-0">Unterstützung in der Stillzeit und Beratung zur Säuglingsernährung.</p>
+                                <h2 class="h5 content-de">Stillen und Ernährung</h2>
+                                <p class="mb-0 content-de">Unterstützung in der Stillzeit und Beratung zur
+                                    Säuglingsernährung.</p>
+                                <h2 class="h5 content-en" style="display: none;">Breastfeeding and nutrition</h2>
+                                <p class="mb-0 content-en" style="display: none;">Support during breastfeeding and
+                                    advice on infant nutrition.</p>
                             </div>
                             <!--div class="col mb-5 h-100">
                                 <div class="feature bg-primary bg-gradient rounded-3 mb-3"><svg
@@ -161,11 +204,16 @@
             <div class="container px-5">
                 <div class="row gx-5">
                     <div class="col-xl-12">
-                        <h2 class="fw-bolder fs-5 mb-6">Aktuelles</h2>
+                        <h2 class="fw-bolder fs-5 mb-6 content-de">Aktuelles</h2>
+                        <h2 class="fw-bolder fs-5 mb-6 content-en" style="display: none;">News</h2>
                         <!-- News item-->
                         <div class="mb-4">
-                            <div class="small text-muted">May 12, 2023</div>
-                            <a class="link-dark">
+                            <div class="small text-muted content-de">12. Mai 2023</div>
+                            <div class="small text-muted content-en" style="display: none;">May 12, 2023</div>
+                            <a class="link-dark content-de">
+                                <h3>Starte Bootstrap Veröffentlichungen und Bootstrap 5 Updates für Vorlagen und Themen
+                                </h3>
+                            </a> <a class="link-dark content-en" style="display: none;">
                                 <h3>Start Bootstrap releases Bootstrap 5 updates for templates and themes</h3>
                             </a>
                         </div>
@@ -214,46 +262,69 @@
                                     class="bi bi-question-circle"></i>
                             </div>
                             <h1 class="fw-bolder">FAQ</h1>
-                            <p class="lead fw-normal text-muted mb-0">Hier findet ihr Antworten auf häufige Fragen.</p>
+                            <p class="lead fw-normal text-muted mb-0 content-de">Hier findet ihr Antworten auf häufige
+                                Fragen.</p>
+                            <p class="lead fw-normal text-muted mb-0 content-en" style="display: none;">Here you find
+                                answers to common questions.</p>
                         </div>
                         <div class="row gx-5">
                             <!-- FAQ Accordion 1-->
                             <!--h2 class="fw-normal mb-3">Account &amp; Billing</h2-->
                             <div class="accordion mb-5" id="accordionExample">
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button"
-                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">1) Was kostet mich die
+                                    <h3 class="accordion-header content-de" id="headingOne"><button
+                                            class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">1) Was kostet mich die
                                             Hebammenbetreuung?</button></h3>
+                                    <h3 class="accordion-header content-en" style="display: none;" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">1) What does midwife care cost me?</button>
+                                    </h3>
                                     <div class="accordion-collapse collapse show" id="collapseOne"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body content-de">
                                             <!--strong>This is the first item's accordion body.</strong-->
                                             - Jede Schwangere hat gesetzlichen Anspruch auf eine Hebammenhilfe während
-                                            Schwangerschaft, Geburt und Wochenbett.
-                                            Alle im Hebammen-Hilfevertrag festgelegten Hebammenleistungen werden
-                                            komplett von den Krankenkassen übernommen.
-                                            Einige Hebammen haben zusätzlich weitere Leistungen im Angebot, welche ggf.
-                                            selbst bezahlt werden müssen.
-                                            Solche biete ich aktuell nicht an, daher werden alle meine erbrachten
-                                            Leistungen von der Krankenkasse bezahlt.
+                                            Schwangerschaft, Geburt und Wochenbett. Alle im Hebammen-Hilfevertrag
+                                            festgelegten Hebammenleistungen werden komplett von den Krankenkassen
+                                            übernommen. Einige Hebammen haben zusätzlich weitere Leistungen im Angebot,
+                                            welche ggf. selbst bezahlt werden müssen. Solche biete ich aktuell nicht an,
+                                            daher werden alle meine erbrachten Leistungen von der Krankenkasse bezahlt.
+                                        </div>
+                                        <div class="accordion-body content-en" style="display: none;">
+                                            <!--strong>This is the first item's accordion body.</strong-->
+                                            - Every pregnant woman is legally entitled to midwife assistance during
+                                            pregnancy, birth, and the postpartum period. All midwifery services
+                                            specified in the midwife assistance contract ("Hebammen-Hilfevertrag") are
+                                            fully covered by the health
+                                            insurance companies. Some midwives offer additional services, which you may
+                                            have to pay for yourself. I do not currently offer such services, so all my
+                                            services are paid for by the health insurance company.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingTwo"><button
+                                    <h3 class="accordion-header content-de" id="headingTwo"><button
                                             class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseTwo" aria-expanded="false"
                                             aria-controls="collapseTwo">2) Kann ich zur Vorsorge zu einer Hebamme
                                             gehen?</button>
                                     </h3>
+                                    <h3 class="accordion-header content-en" style="display: none;" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">2) Can I go to a midwife
+                                            for preventive/antenatal care?</button>
+                                    </h3>
                                     <div class="accordion-collapse collapse" id="collapseTwo"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body content-de">
                                             <!--strong>This is the first item's accordion body.</strong-->
                                             - Generell ist es möglich, die komplette Schwangerenvorsorge von einer
                                             Hebamme durchführen zu lassen,
-                                            sofern diese Schwangerenvorsorgen anbietet. Nur die 3 Ultraschall-
+                                            sofern diese Schwangerenvorsorgen anbietet. Nur die drei Ultraschall-
                                             Untersuchungen können ausschließlich
                                             durch den Frauenarzt/die Frauenärztin stattfinden.<br>
                                             - Ich biete aktuell keine Schwangerenvorsorge an, die regulären
@@ -264,17 +335,35 @@
                                             diesem Rahmen Termine und Vorgespräche
                                             oder bin zusätzlich telefonisch oder per Email für Sie erreichbar.
                                         </div>
+                                        <div class="accordion-body content-en" style="display: none;">
+                                            <!--strong>This is the first item's accordion body.</strong-->
+                                            - In general, it is possible to have the entire prenatal care carried out by
+                                            a midwife, provided that she offers prenatal care. Only the three ultrasound
+                                            examinations can be carried out exclusively by the gynecologist.<br>
+                                            - I do not currently offer prenatal care, so you must continue to attend the
+                                            regular prenatal care appointments with your gynecologist. Nevertheless, it
+                                            is important to me to be there for you from the very beginning of your
+                                            pregnancy to advise you on questions and complaints and I will arrange
+                                            appointments and preliminary consultations within this framework or will
+                                            also be available for you by telephone or email.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingThree"><button
+                                    <h3 class="accordion-header content-de" id="headingThree"><button
                                             class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseThree" aria-expanded="false"
                                             aria-controls="collapseThree">3) Welche Angebote werden ebenfalls von der
                                             Krankenkasse übernommen?</button></h3>
+                                    <h3 class="accordion-header content-en" style="display: none;" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">3) Which services are
+                                            also covered by health insurance?</button>
+                                    </h3>
                                     <div class="accordion-collapse collapse" id="collapseThree"
                                         aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body content-de">
                                             <!--strong>This is the first item's accordion body.</strong-->
                                             - Für Geburtsvorbereitungs- und Rückbildungskurse durch eine Hebamme kommt
                                             die Krankenkasse ebenfalls auf.
@@ -288,6 +377,18 @@
                                             als Präventionskurs anerkannt und anteilig mit bis zu 80% der Kosten
                                             erstattet werden.
                                         </div>
+                                        <div class="accordion-body content-en" style="display: none;">
+                                            <!--strong>This is the first item's accordion body.</strong-->
+                                            - Your health insurance will also pay for antenatal and postnatal classes
+                                            with a midwife. You can enquire about this at the local maternity clinics,
+                                            for example. They often work together with midwives who offer such courses.
+                                            Postnatal recovery courses after pregnancy in particular lay an important
+                                            foundation for regaining a strong pelvic floor and maintaining
+                                            continence.<br>
+                                            - Other professional groups now also offer certified pelvic floor courses,
+                                            which are recognized by health insurance companies as prevention courses and
+                                            are reimbursed up to 80% of the costs.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -299,9 +400,12 @@
                         <div class="text-center mb-5" id="contactFormSection">
                             <div class="feature bg-primary bg-gradient rounded-3 mb-3"><i class="bi bi-envelope"></i>
                             </div>
-                            <h1 class="fw-bolder">Kontakt</h1>
-                            <p class="lead fw-normal text-muted mb-0">Füllt das Formular aus und versendet es im
-                                Mail-Client.</p>
+                            <h1 class="fw-bolder content-de">Kontakt</h1>
+                            <h1 class="fw-bolder content-en" style="display: none;">Contact</h1>
+                            <p class="lead fw-normal text-muted mb-0 content-de">Füllt das Formular aus und versendet es
+                                im Mail-Client.</p>
+                            <p class="lead fw-normal text-muted mb-0 content-en" style="display: none;">Fill out the
+                                form and send it in the mail client.</p>
                         </div>
                         <div class="row gx-5 justify-content-center">
                             <!-- * * * * * * * * * * * * * * *-->
@@ -313,12 +417,19 @@
                             <!-- to get an API token!-->
                             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                                 <!-- Name input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                                        data-sb-validations="required" />
+                                <div class="form-floating mb-3 content-de">
+                                    <input class="form-control" id="name" type="text"
+                                        placeholder="Tragt hier euren Namen ein..." data-sb-validations="required" />
                                     <label for="name">Vollständiger Name</label>
                                     <div class="invalid-feedback" data-sb-feedback="name:required">Ein Name ist
                                         erforderlich.</div>
+                                </div>
+                                <div class="form-floating mb-3 content-en" style="display: none;">
+                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                        data-sb-validations="required" />
+                                    <label for="name">Full name</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.
+                                    </div>
                                 </div>
                                 <!-- Email address input-->
                                 <!--div class="form-floating mb-3">
@@ -333,7 +444,7 @@
                                         Email.</div>
                                 </div-->
                                 <!-- Phone number input-->
-                                <div class="form-floating mb-3">
+                                <div class="form-floating mb-3 content-de">
                                     <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
                                         data-sb-validations="required" />
                                     <label for="phone">Mobilnummer</label>
@@ -342,15 +453,32 @@
                                         Handynummer ist erforderlich.
                                     </div>
                                 </div>
+                                <div class="form-floating mb-3 content-en" style="display: none;">
+                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                        data-sb-validations="required" />
+                                    <label for="phone">Mobile phone</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A telephone or
+                                        mobile number is required.
+                                    </div>
+                                </div>
                                 <!-- Message input-->
-                                <div class="form-floating mb-3">
+                                <div class="form-floating mb-3 content-de">
                                     <textarea class="form-control" id="message" type="text"
-                                        placeholder="Enter your message here..." style="height: 10rem"
+                                        placeholder="Schreibt hier eure Nachricht..." style="height: 10rem"
                                         data-sb-validations="required"></textarea>
                                     <label for="message">Nachricht</label>
                                     <div class="invalid-feedback" data-sb-feedback="message:required">Eine
                                         Nachricht ist
                                         erforderlich.
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3 content-en" style="display: none;">
+                                    <textarea class="form-control" id="message" type="text"
+                                        placeholder="Enter your message here..." style="height: 10rem"
+                                        data-sb-validations="required"></textarea>
+                                    <label for="message">Message</label>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is
+                                        required.
                                     </div>
                                 </div>
                                 <!-- Submit success message-->
@@ -371,13 +499,20 @@
                                 <!-- This is what your users will see when there is-->
                                 <!-- an error submitting the form-->
                                 <div class="d-none" id="submitErrorMessage">
-                                    <div class="text-center text-danger mb-3">Fehler: Nachricht nicht versendet!
+                                    <div class="text-center text-danger mb-3 content-de">Fehler: Nachricht nicht
+                                        versendet!
+                                    </div>
+                                    <div class="text-center text-danger mb-3 content-en" style="display: none;">Error:
+                                        Message not delivered!
                                     </div>
                                 </div>
                                 <!-- Submit Button-->
                                 <div class="d-grid mb-5">
-                                    <button class="btn btn-primary btn-lg" id="submitButton" type="button"> im
+                                    <button class="btn btn-primary btn-lg content-de" id="submitButton" type="button">im
                                         Mail-Client abschicken</button>
+                                    <button class="btn btn-primary btn-lg content-en" style="display: none;"
+                                        id="submitButton" type="button">send in email
+                                        client</button>
                                 </div>
                             </form>
                         </div>
@@ -392,8 +527,11 @@
             <div class="col h-100 text-center">
                 <div class="feature bg-primary bg-gradient rounded-3 mb-3"><i class="bi bi-telephone"></i>
                 </div>
-                <div class="h5">Oder ruft mich an</div>
-                <p class="text-muted mb-0">Mo - Sa 8:00 Uhr - 17:00 Uhr: (555) 892-9403.
+                <div class="h5 content-de">Oder ruft mich an</div>
+                <div class="h5 content-en" style="display: none;">Or give me a call</div>
+                <p class="text-muted mb-0 content-de">Mo - Sa 8:00 Uhr - 17:00 Uhr: (555) 892-9403.
+                </p>
+                <p class="text-muted mb-0 content-en" style="display: none;">Mon - Sat 8 a.m. to 5 p.m.: (555) 892-9403.
                 </p>
             </div>
         </section>
@@ -505,7 +643,8 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js">
+    </script>
 
 </body>
 

@@ -161,4 +161,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+function changeLanguage(language) {
+    // Hide all language content
+    var allDe = document.querySelectorAll('.content-de');
+    var allEn = document.querySelectorAll('.content-en');
+
+    allDe.forEach(el => el.style.display = 'none');
+    allEn.forEach(el => el.style.display = 'none');
+
+    // Show selected language
+    if (language === 'de') {
+        allDe.forEach(el => el.style.display = '');
+    } else if (language === 'en') {
+        allEn.forEach(el => el.style.display = '');
+    }
+}
+
+
 

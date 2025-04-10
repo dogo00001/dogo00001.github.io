@@ -26,13 +26,45 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#aboutMe">Über mich</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#news">Aktuelles</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#faqontact">Kontakt</a></li>
-                        <!--li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li-->
-                        <li class="nav-item"><a class="nav-link" href="index.html#faqontact">FAQ</a></li>
-                        <!--li class="nav-item"><a class="nav-link active" href="imprint.html">Impressum</a></li-->
+                        <!-- German Navigation -->
+                        <li class="nav-item content-de"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item content-de"><a class="nav-link" href="#aboutMe">Über mich</a></li>
+                        <li class="nav-item content-de"><a class="nav-link" href="index.html#news">Aktuelles</a></li>
+                        <li class="nav-item content-de"><a class="nav-link"
+                                href="index.html#contactFormSection">Kontakt</a></li>
+                        <li class="nav-item content-de"><a class="nav-link" href="index.html#faqontact">FAQ</a></li>
+
+                        <!-- English Navigation -->
+                        <li class="nav-item content-en" style="display: none;"><a class="nav-link"
+                                href="index.html">Home</a></li>
+                        <li class="nav-item content-en" style="display: none;"><a class="nav-link" href="#aboutMe">About
+                                me</a></li>
+                        <li class="nav-item content-en" style="display: none;"><a class="nav-link"
+                                href="index.html#news">News</a></li>
+                        <li class="nav-item content-en" style="display: none;"><a class="nav-link"
+                                href="index.html#contactFormSection">Contact</a></li>
+                        <li class="nav-item content-en" style="display: none;"><a class="nav-link"
+                                href="index.html#faqontact">FAQ</a></li>
+
+                        <!-- Language Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownLanguage" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <!-- Using Bootstrap Icons -->
+                                <i class="bi bi-globe"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLanguage">
+                                <li><a class="dropdown-item" href="#" onclick="changeLanguage('de')">DE</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">EN</a></li>
+                            </ul>
+                        </li>
+                        <!--li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                        <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                                        <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                                    </ul>
+                                </li-->
                     </ul>
                 </div>
             </div>
