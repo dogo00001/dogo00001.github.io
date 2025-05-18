@@ -468,6 +468,21 @@
                                         mobile number is required.
                                     </div>
                                 </div>
+                                <!-- Residence input-->
+                                <div class="form-floating mb-3 content-de">
+                                    <input class="form-control" id="residence-de" type="resid" placeholder="64646 Heppenheim"
+                                        data-sb-validations="required" />
+                                    <label for="residence-de">PLZ Wohnort</label>
+                                    <div class="invalid-feedback" data-sb-feedback="postalcode:required">Der Wohnort ist erforderlich.
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3 content-en" style="display: none;">
+                                    <input class="form-control" id="residence-en" type="resid" placeholder="64646 Heppenheim"
+                                        data-sb-validations="required" />
+                                    <label for="residence-en">ZIP city</label>
+                                    <div class="invalid-feedback" data-sb-feedback="postalcode:required">A postal code is required.
+                                    </div>
+                                </div>
                                 <!-- Delivery date input-->
                                 <div class="form-floating mb-3 content-de">
                                     <input class="form-control" id="delivery-de" type="del" placeholder="TT.MM.JJJJ"
@@ -488,7 +503,7 @@
                                 <!-- Message input-->
                                 <div class="form-floating mb-3 content-de">
                                     <textarea class="form-control" id="message-de" type="text" placeholder="[optional]"
-                                        style="height: 10rem" data-sb-validations="optional"></textarea>
+                                        style="height: 5rem" data-sb-validations="optional"></textarea>
                                     <label for="message-de">Anmerkungen [optional]</label>
                                     <!--div class="invalid-feedback" data-sb-feedback="message:required">Eine
                                         Nachricht ist
@@ -497,7 +512,7 @@
                                 </div>
                                 <div class="form-floating mb-3 content-en" style="display: none;">
                                     <textarea class="form-control" id="message-en" type="text" placeholder="[optional]"
-                                        style="height: 10rem" data-sb-validations="optional"></textarea>
+                                        style="height: 5rem" data-sb-validations="optional"></textarea>
                                     <label for="message-en">Comments [optional]</label>
                                     <!--div class="invalid-feedback" data-sb-feedback="message:required">A message is
                                         required.
